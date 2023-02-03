@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+		.aa{
+			/* 1、设置一个高为100px,宽为600px的大盒子，使其在浏览器上居中，边框宽度为1px，实线，边框颜色为#1c424c
+
+			 ——————————————————————————————————————————*/
+      box-sizing: border-box;
+      height: 100px;
+      width: 600px;
+      border: 1px solid #1c424c;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      padding-left: 17px;
+		}
+		.aa > a{
+			float:left;
+			width:100px;
+			height:40px;
+			/* 2、文字字体为微软雅黑,字体大小为16px,字体颜色为black
+			————————————————————————————————————————————*/
+			/* 3、5个小盒子的边框宽度为1px，实线，边框颜色为#1c424c,背景颜色为#37b7da
+			————————————————————————————————————————————*/
+			/* 4、5个小盒子内的文字水平垂直居中，去掉下划线
+			————————————————————————————————————————————*/
+			/*  5、5个小盒子之间的间距为15px ，与大盒子的顶部间距为20px
+            —————————————————————————————————————————————*/
+      font-family: "Microsoft YaHei";
+      color: rgb(0,0,0);
+      font-size: 16px;
+      border: 1px solid #1c424c;
+      background-color: #37b7da;
+      text-align: center;
+      line-height: 40px;
+      margin-top: 20px;
+      margin-right: 15px;
+      text-decoration: none;
+		}
+			/*  6、鼠标经过每个小盒子时，小盒子内的背景颜色会变为orange
+			————————————————————————————————————————————*/
+    .aa > a:hover{
+      background-color: orange;
+    }
+	</style>
+</head>
+<body>
+   <div class="aa">
+      <a href="#">首页</a>
+      <a href="#">手机新浪网</a>
+      <a href="#">网站导航</a>
+      <a href="#">微博</a>
+      <a href="#">淘宝</a>
+  	</div>
+</body>
+</html>
